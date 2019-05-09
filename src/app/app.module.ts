@@ -26,7 +26,7 @@ import { Browser } from 'protractor';
     HttpClientModule,
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
-      name: 'APM Demo App DevTools',
+      name: 'Game Night Manager',
       maxAge: 25,
       logOnly: environment.production,
     })
