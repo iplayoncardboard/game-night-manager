@@ -1,0 +1,42 @@
+button {
+    width: 50%;
+    float: right;
+}
+img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.event-title{
+    font-weight: 700;
+    color: grey;
+    font-size: 2rem;
+}
+
+.event-date{
+    font-weight: 700;
+    color: darkgray;
+    font-size: 2rem
+}
+.event-container {
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 5%;
+    display: inline-block;
+    margin: 4em;
+    padding: .5rem;
+}
+
+.game{
+    margin: .25rem;
+    padding: .10rem;
+}
+.game-list{
+    margin: .25rem;
+}
+.game-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    vertical-align: middle;
+}

@@ -1,11 +1,31 @@
 import { DatePipe } from "@angular/common";
-import { Game } from '../../game/game';
+import { Event } from '../event';
 import { Location } from '../../user/user';
+import {EventActions, EventActionTypes} from './event.actions'
 export interface EventState {
-    currentEventId: string;
-    date: Date;
-    name: string;
-    games: Array <Game>
-    host: string;
-    location: Location;
+    currentEventId: number | null; 
+    events: Array <Event>;
+}
+
+const initialState: EventState = {
+    currentEventId: null,
+    events: []
+   
+};
+
+export function reducer(state = initialState, action: EventActions): EventState {
+    switch(action.type) {
+        case EventActionTypes.SetCurrentEvent: {
+            return {
+                ...state,
+                currentEventId: action.payload
+            };
+        }
+
+        case EventActionTypes.InitializeCurrentEvent: {
+            return {...state,
+                currentEventId: 0
+            }
+        }
+    }
 }

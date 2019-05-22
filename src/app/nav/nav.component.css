@@ -1,0 +1,12 @@
+
+.nav-right {
+    color:green;
+    float: right;
+}
+
+.app-name {
+    color: black;
+}
+span .nav-item {
+    margin: 0 2em;
+}

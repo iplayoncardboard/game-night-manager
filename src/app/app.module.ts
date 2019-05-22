@@ -13,24 +13,33 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment';
 import { EffectsModule } from '@ngrx/effects'
 import { Browser } from 'protractor';
-
+import { NavComponent } from './nav/nav.component';
+import { BaseContainerComponent } from './base-container/base-container.component';
+import { FooterComponent } from './footer/footer.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModule} from './core/material/material.module'
 @NgModule({
-  declarations: [
-    AppComponent,
-    EventContainerComponent,
-    EventComponent
-
-  ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
+    StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
       name: 'Game Night Manager',
-      maxAge: 25,
-      logOnly: environment.production,
-    })
+      maxAge: 25
+    }),
+    MaterialModule
   ],
+  declarations: [
+    AppComponent,
+    EventContainerComponent,
+    EventComponent,
+    NavComponent,
+    BaseContainerComponent,
+    FooterComponent
+  ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
