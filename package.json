@@ -27,7 +27,9 @@
     "@ngrx/store": "^7.4.0",
     "@ngrx/store-devtools": "^7.4.0",
     "core-js": "^2.6.5",
+    "dotenv": "^8.0.0",
     "rxjs": "^6.5.1",
+    "tar": "^4.4.8",
     "ts-lint": "^4.5.1",
     "typescript": "^3.1.1",
     "zone.js": "^0.9.1"

@@ -1,6 +1,6 @@
 import { DatePipe } from "@angular/common";
 import { Event } from '../event';
-import { Location } from '../../user/user';
+import { Location } from '../../shared/models/location';
 import {EventActions, EventActionTypes} from './event.actions'
 export interface EventState {
     currentEventId: number | null; 

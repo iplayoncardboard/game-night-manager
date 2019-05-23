@@ -17,7 +17,8 @@ import { NavComponent } from './nav/nav.component';
 import { BaseContainerComponent } from './base-container/base-container.component';
 import { FooterComponent } from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MaterialModule} from './core/material/material.module'
+import {MaterialModule} from './core/material/material.module';
+import { LoginComponent } from './user/login/login.component'
 @NgModule({
   imports: [
     BrowserModule,
@@ -37,7 +38,8 @@ import {MaterialModule} from './core/material/material.module'
     EventComponent,
     NavComponent,
     BaseContainerComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   
   providers: [],

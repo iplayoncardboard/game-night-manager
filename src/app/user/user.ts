@@ -1,18 +1,13 @@
-
+import {Location} from '../shared/models/location';
+import { SpawnSyncOptionsWithBufferEncoding } from 'child_process';
 export interface User {
     id: string;
     firstName: string;
     lastName: string
     location: Location;
     email: string;
+    bggUserId: string;
     
 }
 
 
-export interface Location {
-    houseNumber: string;
-    street: string;
-    city: string;
-    state: string;
-    zip: string
-}
